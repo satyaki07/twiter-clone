@@ -24,3 +24,7 @@
     margin-left: 20px;
     margin-bottom: 20px;
 }
+
+.tweetBox__tweetButton {
+    background-color: var(--twitter-color) !important;
+}

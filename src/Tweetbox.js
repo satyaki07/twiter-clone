@@ -2,17 +2,22 @@ import React from "react";
 import "./TweetBox.css";
 import { Avatar, Button } from "@material-ui/core";
 
-function Tweetbox() {
+function TweetBox() {
   return (
     <div className="tweetBox">
       <form>
         <div className="tweetBox__input">
           <Avatar src="https://media.newyorker.com/photos/5da91499ada3240008c1fb73/master/pass/191028_r35206.jpg"></Avatar>
-            <input placeholder="What's happening?" type="text" />
-            
+          <input placeholder="What's happening?" type="text" />
         </div>
+        <input
+          className="tweetBox__imageInput"
+          placeholder="Optional: Enter image URL"
+          type="text"
+        />
+        <Button className="tweetBox__tweetButton">Tweet</Button>
       </form>
     </div>
   );
 }
-export default Tweetbox;
+export default TweetBox;
